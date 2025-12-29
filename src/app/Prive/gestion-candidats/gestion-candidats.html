@@ -1,0 +1,18 @@
+<h1>Candidats</h1>
+@for (candidat of candidats; track $index) {
+<div class="container">
+  <div><img src="{{ candidat.img }}" alt="" /></div>
+  <div class="first-line">
+    <div>CIN : {{ candidat.cin }}</div>
+    <div>Nom : {{ candidat.nom }}</div>
+  </div>
+  <div class="second-line">
+    <div>Prenom : {{ candidat.prenom }}</div>
+    <div>Email : {{ candidat.email }}</div>
+  </div>
+  <div class="third-line">
+    <div><a [routerLink]="['/inscription', candidat.cin]" class="modif">Modifier</a></div>
+    <div><button (click)="supprimer(candidat.cin)">Supprimer</button></div>
+  </div>
+</div>
+}

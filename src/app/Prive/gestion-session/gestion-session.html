@@ -1,0 +1,21 @@
+<div class="title">
+  <h1>Sessions :</h1>
+  <button><a routerLink="/formulaire-session">Ajouter Session</a></button>
+</div>
+
+<div class="cards-container">
+  @for (session of sessions; track $index) {
+  <div class="container">
+    <div><strong>Formation :</strong> {{ formations[session.formationId].titre }}</div>
+    <div>
+      <strong>Formateur :</strong> {{ session.formateur.nom }} {{ session.formateur.prenom }}
+    </div>
+    <div><strong>Date début :</strong> {{ session.dateDebut }}</div>
+    <div><strong>Date fin :</strong> {{ session.dateFin }}</div>
+    <div class="third-line">
+      <div><a [routerLink]="['/formulaire-session', session.id]" class="modif">Modifier</a></div>
+      <div><button (click)="supprimer(session)" class="supp">Supprimer</button></div>
+    </div>
+  </div>
+  }
+</div>

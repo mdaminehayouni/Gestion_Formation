@@ -1,0 +1,24 @@
+<div class="title">
+  <h1>Formations :</h1>
+  <button><a routerLink="/formulaire-formation">Ajouter Formation</a></button>
+</div>
+
+<div class="cards-container">
+  @for (formation of formations; track $index) {
+  <div class="container">
+    <img src="{{ formation.img }}" alt="{{ formation.titre }}" />
+    <div class="first-line">
+      <div>Titre : {{ formation.titre }}</div>
+      <div>Difficulté : {{ formation.difficulte }}</div>
+      <div>Durée : {{ formation.duree }}h</div>
+    </div>
+    <div class="second-line">
+      <div>Description : {{ formation.description }}</div>
+    </div>
+    <div class="third-line">
+      <a [routerLink]="['/formulaire-formation', formation.id]">Modifier</a>
+      <button (click)="supprimer(formation)">Supprimer</button>
+    </div>
+  </div>
+  }
+</div>

@@ -1,0 +1,71 @@
+.title {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 100px;
+  background-image: url('/assets/back.png');
+}
+.title p {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}
+.title span {
+  color: rgb(0, 128, 255);
+}
+.desc {
+  display: flex;
+  align-items: center;
+  padding-block: 30px;
+  background-color: rgb(0, 128, 255);
+  color: white;
+}
+.desc > p {
+  font-size: 20px;
+  width: 60%;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+.desc img {
+  height: 100%;
+  width: auto;
+}
+.container {
+  padding-block: 10px;
+  background-color: white;
+  width: 15%;
+  height: 250px;
+  border-radius: 10px;
+  color: black;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container i {
+  font-size: 40px;
+}
+.container p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.container > div p {
+  margin-top: 20px;
+}
+.container > div p + p {
+  font-size: 30px;
+}
+.formations {
+  margin-top: 70px;
+  display: flex;
+  padding-left: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

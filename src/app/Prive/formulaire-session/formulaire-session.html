@@ -1,0 +1,32 @@
+<h1>Ajouter / Modifier Session</h1>
+<form #f="ngForm" (ngSubmit)="submit(f)">
+  <div class="mb-3">
+    <label for="formation">Formation :</label>
+    <select id="formation" name="formation" [(ngModel)]="session.formationId">
+      @for (formation of formations; track $index) {
+      <option [value]="formation.id">{{ formation.titre }}</option>
+      }
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="formateur">Formateur :</label>
+    <select id="formateur" name="formateur" [(ngModel)]="session.formateur">
+      @for (f of formateursDisponibles; track $index) {
+      <option [ngValue]="f">{{ f.nom }} {{ f.prenom }}</option>
+      }
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label>Date début :</label>
+    <input type="date" [(ngModel)]="session.dateDebut" name="dateDebut" />
+  </div>
+
+  <div class="mb-3">
+    <label>Date fin :</label>
+    <input type="date" [(ngModel)]="session.dateFin" name="dateFin" />
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

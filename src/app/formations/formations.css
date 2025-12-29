@@ -1,0 +1,43 @@
+.recherche-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  flex-direction: row;
+}
+.recherche-box input {
+  width: 50%;
+  border-radius: 50px 0px 0px 50px;
+  outline: none;
+  border: 1px solid gray;
+  padding-left: 20px;
+  border-right: none;
+  height: 40px;
+}
+.recherche-box i {
+  border: 1px solid gray;
+  border-left: none;
+  width: 25px;
+  height: 40px;
+  border-radius: 0px 50px 50px 0px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/bg_formations.png');
+}
+.title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}
+.title span {
+  color: rgb(0, 128, 255);
+}

@@ -1,0 +1,95 @@
+.title {
+  display: flex;
+  justify-content: center;
+  gap: 800px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title h1 {
+  font-size: 36px;
+  color: #2563eb;
+  margin: 0;
+}
+
+.title button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.title button:hover {
+  background-color: #45a049;
+}
+
+.title button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.third-line {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-line button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.third-line a {
+  padding: 6.6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+}
+
+.third-line a:hover {
+  background-color: #0b7dda;
+}
+
+.third-line button {
+  background-color: #f44336;
+  color: white;
+}
+
+.third-line button:hover {
+  background-color: #da190b;
+}

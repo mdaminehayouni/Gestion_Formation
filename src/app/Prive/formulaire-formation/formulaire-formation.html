@@ -1,0 +1,45 @@
+<h1>Formation</h1>
+<form #f="ngForm" (ngSubmit)="submit(f)">
+  <div class="mb-3">
+    <label for="titre">Titre :</label>
+    <input type="text" class="form-control" id="titre" name="titre" [(ngModel)]="formation.titre" />
+  </div>
+  <div class="mb-3">
+    <label for="difficulte">Difficulte :</label>
+    <input
+      type="text"
+      class="form-control"
+      id="difficulte"
+      name="difficulte"
+      [(ngModel)]="formation.difficulte"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="duree">Durée (h) :</label>
+    <input
+      type="number"
+      class="form-control"
+      id="duree"
+      name="duree"
+      [(ngModel)]="formation.duree"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="description">Description :</label>
+    <textarea
+      class="form-control"
+      id="description"
+      name="description"
+      [(ngModel)]="formation.description"
+    ></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="img">Image :</label>
+    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="formation.img" />
+  </div>
+  <div class="mb-3">
+    <label for="pdf">PDF :</label>
+    <input type="text" class="form-control" id="pdf" name="pdf" [(ngModel)]="formation.pdf" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

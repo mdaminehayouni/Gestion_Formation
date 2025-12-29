@@ -1,0 +1,33 @@
+import { Routes } from '@angular/router';
+import { Home } from './home/home';
+import { Formations } from './formations/formations';
+import { Session } from './session/session';
+import { Inscription } from './inscription/inscription';
+import { HomeAdmin } from './Prive/home-admin/home-admin';
+import { GestionCandidats } from './Prive/gestion-candidats/gestion-candidats';
+import { gestion_formateurs } from './Prive/gestion-formateurs/gestion-formateurs';
+import { FormulaireFormateur } from './Prive/formulaire-formateur/formulaire-formateur';
+import { GestionFormations } from './Prive/gestion-formation/gestion-formation';
+import { FormulaireFormation } from './Prive/formulaire-formation/formulaire-formation';
+import { GestionSession } from './Prive/gestion-session/gestion-session';
+import { FormulaireSession } from './Prive/formulaire-session/formulaire-session';
+
+export const routes: Routes = [
+  { path: '', component: Home },
+  { path: 'formations', component: Formations },
+  { path: 'session/:id', component: Session },
+  { path: 'inscription/:id_formation/:id_session', component: Inscription },
+  { path: 'inscription/:cin', component: Inscription },
+  { path: 'admin', component: HomeAdmin },
+  { path: 'gestion_candidat', component: GestionCandidats },
+  { path: 'gestion_formateurs', component: gestion_formateurs },
+  { path: 'formulaire-formateur/:cin', component: FormulaireFormateur },
+  { path: 'formulaire-formateur', component: FormulaireFormateur },
+  { path: 'gestion_formations', component: GestionFormations },
+  { path: 'formulaire-formation/:id', component: FormulaireFormation },
+  { path: 'formulaire-formation', component: FormulaireFormation },
+  { path: 'gestion_sessions', component: GestionSession },
+  { path: 'gestion_sessions/:id', component: GestionSession },
+  { path: 'formulaire-session/:id', component: FormulaireSession },
+  { path: 'formulaire-session', component: FormulaireSession },
+];

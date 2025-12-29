@@ -1,0 +1,57 @@
+<h1>Inscription</h1>
+<form #f="ngForm" (ngSubmit)="sauvegarder(f)">
+  <div class="mb-3">
+    <label for="nom" class="form-label">Nom : </label>
+    <input type="text" class="form-control" id="nom" name="nom" [(ngModel)]="candidat.nom" />
+  </div>
+  <div class="mb-3">
+    <label for="prenom" class="form-label">Prenom : </label>
+    <input
+      type="text"
+      class="form-control"
+      id="prenom"
+      name="prenom"
+      [(ngModel)]="candidat.prenom"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Adresse Email : </label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      [(ngModel)]="candidat.email"
+      name="email"
+    />
+    <div id="emailHelp" class="form-text">Votre Email sera privé avec nous</div>
+  </div>
+  <div class="mb-3">
+    <label for="cin" class="form-label">CIN : </label>
+    <input
+      type="number"
+      class="form-control"
+      id="cin"
+      name="cin"
+      [(ngModel)]="candidat.cin"
+      aria-describedby="divcin"
+    />
+    <div id="divcin" class="form-text">Votre CIN sera privé avec nous</div>
+  </div>
+  <div class="mb-3">
+    <label for="mdp" class="form-label">Mot de passe : </label>
+    <input type="password" class="form-control" id="mdp" name="mdp" [(ngModel)]="candidat.mdp" />
+  </div>
+  <div class="mb-3">
+    <label for="nom" class="form-label">Image : </label>
+    <input
+      type="text"
+      class="form-control"
+      id="img"
+      name="img"
+      placeholder="image.png"
+      [(ngModel)]="candidat.img"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

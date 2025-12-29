@@ -1,0 +1,9 @@
+<div class="bg">
+  <p class="title">Trouver vos <span>Formations</span></p>
+</div>
+<div class="recherche-box">
+  <input type="text" id="recherche" [(ngModel)]="input_recherche" /><i
+    class="fa-solid fa-magnifying-glass"
+  ></i>
+</div>
+<app-affiche-card [desc_recherche]="input_recherche"></app-affiche-card>

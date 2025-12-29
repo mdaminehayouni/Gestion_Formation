@@ -1,0 +1,16 @@
+<div class="card">
+  <img src="{{ img() }}" alt="erreur" />
+  <div class="desc">
+    <p class="title">{{ formation.titre }}</p>
+    <div [class]="difficultyClass(formation.difficulte)" class="difficulte">
+      {{ formation.difficulte }}
+    </div>
+    <p>
+      {{ formation.description }}
+    </p>
+    <p>
+      <i class="fa-regular fa-clock"></i> &nbsp;{{ formation.duree }} Hours &nbsp;&nbsp;
+      <i class="fa-solid fa-lock-open"></i>&nbsp; Free
+    </p>
+  </div>
+</div>

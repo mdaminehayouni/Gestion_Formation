@@ -1,0 +1,24 @@
+<div class="title">
+  <h1>Formateurs :</h1>
+  <button><a routerLink="/formulaire-formateur">ajouter Formateur</a></button>
+</div>
+@for (formateur of formateurs; track $index) {
+<div class="container">
+  <div><img src="{{ formateur.img }}" alt="" /></div>
+  <div class="first-line">
+    <div>CIN : {{ formateur.cin }}</div>
+    <div>Nom : {{ formateur.nom }}</div>
+    <div>Prenom : {{ formateur.prenom }}</div>
+  </div>
+  <div class="second-line">
+    <div>Email : {{ formateur.email }}</div>
+    <div>Telephone : {{ formateur.telephone }}</div>
+    <div>cv : {{ formateur.cv }}</div>
+  </div>
+  <div class="second-line"></div>
+  <div class="third-line">
+    <div><a [routerLink]="['/formulaire-formateur', formateur.cin]" class="modif">Modifier</a></div>
+    <div><button (click)="supprimer(formateur)" class="supp">Supprimer</button></div>
+  </div>
+</div>
+}

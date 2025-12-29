@@ -1,0 +1,6 @@
+<div class="formations">
+  @for (formation of affiche() ;track formation.id){<app-formation-card
+    [routerLink]="['/session', formation.id]"
+    [formation]="formation"
+  ></app-formation-card>}
+</div>

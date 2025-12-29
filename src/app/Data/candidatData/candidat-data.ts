@@ -1,0 +1,60 @@
+import { Candidat } from './candidat';
+
+export const CANDIDATS: Candidat[] = [
+  {
+    nom: 'Chérif',
+    prenom: 'Nour',
+    email: 'nour.cherif@example.com',
+    cin: 23456789,
+    mdp: 'nourpass',
+    img: 'assets/fille4.png',
+  },
+  {
+    nom: 'Zribi',
+    prenom: 'Amine',
+    email: 'amine.zribi@example.com',
+    cin: 34567890,
+    mdp: 'amine123',
+    img: 'assets/c1.png',
+  },
+  {
+    nom: 'Ferjani',
+    prenom: 'Yassine',
+    email: 'yassine.ferjani@example.com',
+    cin: 56789012,
+    mdp: 'yassine123',
+    img: 'assets/c3.png',
+  },
+  {
+    nom: 'Jaziri',
+    prenom: 'Houssem',
+    email: 'houssem.jaziri@example.com',
+    cin: 67890123,
+    mdp: 'houssem2025',
+    img: 'assets/c2.png',
+  },
+  {
+    nom: 'Ben Hassen',
+    prenom: 'Leila',
+    email: 'leila.benhassen@example.com',
+    cin: 78901234,
+    mdp: 'leila123',
+    img: 'assets/fille3.png',
+  },
+  {
+    nom: 'Mahmoudi',
+    prenom: 'Amira',
+    email: 'amira.mahmoudi@example.com',
+    cin: 89012345,
+    mdp: 'amira2025',
+    img: 'assets/fille2.png',
+  },
+  {
+    nom: 'Khedher',
+    prenom: 'Sarra',
+    email: 'sarra.khedher@example.com',
+    cin: 11234567,
+    mdp: 'sarra2025',
+    img: 'assets/fille1.png',
+  },
+];

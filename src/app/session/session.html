@@ -1,0 +1,26 @@
+<div class="titre">
+  <h1>{{ formation_session.titre }}</h1>
+  <p class="desc">{{ formation_session.description }}</p>
+  <p class="heure">{{ formation_session.duree }} Heures</p>
+  <p class="pdf">
+    <a href="{{ formation_session.pdf }}" target="_blank" download>Telecharger PDF</a>
+  </p>
+</div>
+<div class="session">
+  <p>Les Sessions</p>
+  @for (session of formation_session.sessions; track $index) {
+  <ul>
+    <li>{{ session.formateur.prenom + ' ' + session.formateur.nom }}</li>
+    <li>{{ session.dateDebut }}</li>
+    <li>{{ session.dateFin }}</li>
+    <li>{{ session.candidat.length }}/15</li>
+    <button
+      [disabled]="session.candidat.length >= 15"
+      [class.disable]="session.candidat.length >= 15"
+      (click)="verif(session)"
+    >
+      {{ session.candidat.length >= 15 ? 'Complet' : "S'inscrire" }}
+    </button>
+  </ul>
+  }
+</div>

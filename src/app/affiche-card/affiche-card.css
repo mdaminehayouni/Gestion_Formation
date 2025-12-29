@@ -1,0 +1,11 @@
+.formations {
+  margin-top: 45px;
+  display: flex;
+  padding-left: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.formations a {
+  width: 30%;
+  text-decoration: none;
+}
